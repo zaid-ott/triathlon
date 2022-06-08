@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="inscription.css">
+   <!---<link rel="stylesheet" href="liste.css">--> 
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<html>
+<header>
+        
+        <nav>
+            <div class="logo">
+                <a href="#"> <b>triathlon</b> </a>
+            </div>
+            <div class="onglets">
+                <a href="index.php">accueil</a>
+                <a href="inscription1.php">inscription</a>
+                <a href="connexion1.php">connexion</a>
+                <a href="mailto:ottmanizaid1996@gmail.com">@Contact us </a>
+                <a href="deconnexion.php">LOG OUT </a>
+                
+               <!-- <a href="deconnexion.php">log OUT </a>-->
+                
+            </div>
+        </nav>
+        <div class="principal">
+            <h1><b> Triathlon Grand Toulouse</b> </h1>
+            <h2><i class="fas fa-swimmer"></i>
+                <i class="fas fa-running"></i>
+                <i class="fas fa-biking"></i>
+            </h2>
+            <br>
+        </div>
+    
+</header>
+
+    <body>
+        <div class= "container">
+         <form action="compt_ajouter.php" method="POST">
+             <!--
+             info client : nom, prenom, date naissance, rue, ville, CP, complement d'adresse, telephone, mail, mdp
+             -->
+                 <h2 class="titre">Ajouter un triathlon </h2>
+ 
+                     <input type="text" name="nom" placeholder="Nom du triathlon" required/>
+                     <input type="text"  name="lieu"  placeholder="lieu"  required>
+                     <input type="date" name="date" placeholder="date " required>
+                     <select name="select"> 
+                        <option value="0908">0908 - triathlon EXP</option>
+                        <option value="0907">0907- triathlon Amateur</option>
+                        <option value="0902">0902- Enfants</option>
+                     </select >
+                     <span id="msg_err"> </span>
+                 <div class="form-group">
+                     <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                     <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in <a href="#" class="term-service">Terms of service</a></label>
+                     </div>
+                 <div id="button1">            
+                 <!-- a rediriger vers l'accueil en mettant inscription 2 dans accueil -->
+                 <input type="submit" name="valider" value="Ajouter" id="bouton" class="form-submit"/>
+                 </div>
+             </div>
+         </form>
+     </div>
+    </body>
+
+     <footer style="position:fixed">
+         <p><i class="fa fa-copyright" aria-hidden="true"> contactez-nous au 05 90 32 45 61</i></p>
+         <div class="social-media">
+             <p> <i class="fab fa-facebook-f" aria-hidden="true"></i></p>
+             <p> <i class="fab fa-twitter" aria-hidden="true"></i></p>
+             <p> <i class="fab fa-instagram" aria-hidden="true"></i></p>
+             <p> <i class="fab fa-linkedin" aria-hidden="true"></i></p>
+         </div>
+     </footer>
+
+</html>
