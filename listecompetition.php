@@ -3,7 +3,7 @@
 
     
     <?php  
-   include("header.php");
+   include("header.html");
     //entete avec le formulaire de connexion + connexion a la bdd
 
     //session_start();
@@ -61,7 +61,7 @@
 
             if(isset($errinscri)){
                 echo "<br> <br><div style='color:red'>" .$errinscri;
-                echo "<a href ='connexion1.php' > s'identifier <i class='fas fa-external-link-alt'></i></i></a></div>";
+                echo "<a href ='connexion1.html' > s'identifier <i class='fas fa-external-link-alt'></i></i></a></div>";
             }
         }
             else {
@@ -180,7 +180,7 @@
         if(isset($errinscri)){
             echo '<script style = "color:red">alert("veuillez vous authentifier pour s "inscrire au triathlon ! ")</script>';
             echo "<br> <br><div style='color:red'>" .$errinscri;
-            echo "<a href ='connexion1.php' > s'identifier <i class='fas fa-external-link-alt'></i></i></a></div>";
+            echo "<a href ='connexion1.html' > s'identifier <i class='fas fa-external-link-alt'></i></i></a></div>";
         }
     }
 

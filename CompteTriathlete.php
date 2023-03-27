@@ -1,6 +1,6 @@
 
         <?php 
-            include("header.php");
+            include("header.html");
             //entete avec le formulaire de connexion + connexion a la bdd
            
             $id=$_SESSION["id"];

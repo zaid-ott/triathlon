@@ -35,7 +35,7 @@ if (isset($valider)){
          } 
         }else {  
             $erreur="mauvais login ou mot de passe ! ";
-            include("connexion1.php"); 
+            include("connexion1.html"); 
 }
 }
 ?>

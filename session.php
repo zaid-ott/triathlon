@@ -1,7 +1,7 @@
 <?php
     session_start();
     if($_SESSION["autoriser"]!="oui"){
-        header("refresh: 1 ;  url=connexion1.php");
+        header("refresh: 1 ;  url=connexion1.html");
    //header("location: connexion.html");
         exit(); 
 

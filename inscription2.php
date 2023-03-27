@@ -25,16 +25,16 @@
             if(empty($nom)){
                 $erreur="nom laissé vide !";
                 echo $erreur;
-                header("refresh:2; url=inscription1.php");
+                header("refresh:2; url=inscription1.html");
              }
              else if(empty($login))
              {
                 echo "email vide ! <br> ";
-                header("refresh:2; url=inscription1.php");
+                header("refresh:2; url=inscription1.html");
              }
              else if ($pass!=$c_pass){
                  echo "les champs de mot de passe ne correspondent pas";
-                 header("refresh:2; url=inscription1.php");
+                 header("refresh:2; url=inscription1.html");
              }
             else{ 
                 include("connexionBDD.php");
@@ -57,7 +57,7 @@
                     echo $passH;
                     $ins->execute (array($NumeroLicence,$nom, $prenom,$sexe,$rue,$ville,$codepostal,$compladresse,$login,$passH));//md5($pass)//crypt($pass)
                     echo "votre inscription a bien été prise en compte <br></br>";
-                    header("refresh:2; url=connexion1.php");  
+                    header("refresh:2; url=connexion1.html");  
             }
         }
     }       
